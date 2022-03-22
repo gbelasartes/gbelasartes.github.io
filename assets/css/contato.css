@@ -19,8 +19,6 @@
     display: flex;
     flex-direction: column;
     
-    width: 80%;
-
     gap: 0.5rem;
   }
 
@@ -48,7 +46,6 @@
 
     .contato__botoes{
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
     }
 
@@ -59,19 +56,39 @@
 
 /* MOBILE */
 @media screen and (min-width:0){
-  
+  .contato__form{
+    width: 100%;
+  }
+
+  .contato__botoes{
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contato__botao{
+    width: 100%;
+  }
 }/* MOBILE - FIM */
 
 
 /* TABLET */
 @media screen and (min-width: 768px){
-  
+  .contato__botao{
+    width: unset;
+  }
 }/* TABLET - FIM */
 
 
 /* 1024 */
 @media screen and (min-width: 1024px){
-  
+  .contato__form{
+    width: 80%;
+  }
+
+  .contato__botoes{
+    flex-direction: row;
+    gap: unset;
+  }
 }/* 1024 - FIM */
 
 

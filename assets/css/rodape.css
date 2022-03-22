@@ -26,7 +26,13 @@
 
   /* MOBILE */
 @media screen and (min-width:0){
-  
+  .rodape .menu{
+    background-color: unset;
+    height: auto;
+    position: relative;
+    top: unset; right: unset;
+    width: auto;
+  }
 }/* MOBILE - FIM */
 
 

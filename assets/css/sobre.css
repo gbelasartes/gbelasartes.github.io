@@ -12,18 +12,14 @@
 
   .sobre__conteudo{
     display: flex;
-    flex-direction: row;
     gap: 0.5rem;
   }
 
     .sobre__info, .sobre__mais{
-      width: calc(50% - 0.25rem);
       display: flex;
       flex-direction: column;
       justify-content: space-around;
     }
-
-      .sobre__titulo{}
 
       .sobre__descricao{
         font-weight: 200;
@@ -53,9 +49,6 @@
 
           .sobre__item-nome{
             color: var(--preto-claro);
-            font-size: 1.5rem;
-
-            
           }
 
           .sobre__itens #email{
@@ -65,7 +58,22 @@
 
 /* MOBILE */
 @media screen and (min-width:0){
+  .sobre__conteudo{
+    flex-direction: column;
+  }
+
+  .sobre__info, .sobre__mais{
+    width: 100%;
+  }
   
+  .sobre__item-nome{
+    font-size: 1rem;
+  }
+
+  .sobre__item{
+    height: auto;
+    padding: 0.5rem;
+  }
 }/* MOBILE - FIM */
 
 
@@ -77,11 +85,29 @@
 
 /* 1024 */
 @media screen and (min-width: 1024px){
+  .sobre__conteudo{
+    flex-direction: row;
+  }
+
+  .sobre__info, .sobre__mais{
+    width: calc(50% - 0.25rem);
+  }
   
+  .sobre__item-nome{
+    font-size: 1.25rem;
+  }
+
+  .sobre__item{
+    height: 2.5rem;
+    padding: 0.5rem;
+  }
 }/* 1024 - FIM */
 
 
 /* 1200 */
 @media screen and (min-width: 1200px){
-  
+  .sobre__item-nome{
+    font-size: 1.5rem;
+  }
+
 }/* 1200 - FIM */
