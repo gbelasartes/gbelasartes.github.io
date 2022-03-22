@@ -1,0 +1,144 @@
+:root{
+  --preto:#131313;
+  --preto-claro:#353535;
+  --cinza-escuro:#898989;
+  --cinza-claro:#BCBCBC;
+  --branco:#E3E3E3;
+  --ciano:#60FFFF;
+  --magenta:#FF60FF;
+  --amarelo:#FFFF60;
+
+  --fonte-padrao:'Source Sans Pro', sans-serif;
+  --fonte-detalhe:'Kalam', cursive;
+
+  --pesoFonte-padrao:400;
+  --pesoFonte-titulo:700;
+
+  --altura-header:4rem;
+  
+  --padding-lateral: 5rem;
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+fieldset{
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border-spacing: unset;
+  box-sizing: border-box;
+  
+
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: var(--altura-header);
+}
+
+body {
+  text-decoration: none;
+  height: 100vh;
+}
+
+
+main{
+  margin-top: var(--altura-header);
+  padding-top: 2rem;
+
+  width:100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  background-color: var(--preto);
+
+  color: var(--branco);
+  
+}
+
+*{
+  margin: 0;
+}
+
+.invisivel{
+  display: none;
+  opacity: 0;
+}
+
+.padding-pagina{
+  padding:0 var(--padding-lateral);
+}
+
+.botao{
+  display: block;
+  outline: none;
+  border: none;
+  width: 15rem;
+  height: 2rem;
+
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: var(--pesoFonte-titulo);
+  color: var(--preto-claro);
+
+  box-shadow: 0 0 0.5rem var(--cinza-escuro);
+} 
+  .botao-cinza{ background-color: var(--cinza-claro);color: var(--preto);}
+  .botao-preto{ background-color: var(--preto-claro);color: var(--branco);}
+  .botao-branco{ background-color: var(--branco);color: var(--preto);}
+  .botao-ciano{ background-color: var(--ciano);color: var(--preto-claro);}
+  .botao-magenta{ background-color: var(--magenta);color: var(--preto-claro);}
+  .botao-amarelo{ background-color: var(--amarelo);color: var(--preto-claro);}
+
+.texto-padrao{
+  font-size: 1rem;
+  font-family: var(--fonte-padrao);
+  font-weight: var(--pesoFonte-padrao);
+  color: var(--preto-claro);
+  letter-spacing: 5%;
+}
+.titulo1, .titulo2{
+  font-size: 1.5rem;
+  font-family: var(--fonte-padrao);
+  font-weight: var(--pesoFonte-titulo);
+  color: var(--preto);
+  letter-spacing: 0%;
+}
+
+.titulo1{
+  font-size: 4rem;
+
+  text-transform: uppercase;
+}
+
+/* MOBILE */
+@media screen and (min-width:0){
+  
+}/* MOBILE - FIM */
+
+
+/* TABLET */
+@media screen and (min-width: 768px){
+  
+}/* TABLET - FIM */
+
+
+/* 1024 */
+@media screen and (min-width: 1024px){
+  
+}/* 1024 - FIM */
+
+
+/* 1200 */
+@media screen and (min-width: 1200px){
+  
+}/* 1200 - FIM */

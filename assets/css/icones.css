@@ -1,0 +1,73 @@
+.svg-preto{
+  fill: var(--preto);
+}
+.svg-preto-claro{
+  fill: var(--preto-claro);
+}
+.svg-cinza-escuro{
+  fill: var(--cinza-escuro);
+}
+.svg-cinza-claro{
+  fill: var(--cinza-claro);
+}
+.svg-branco{
+  fill: var(--branco);
+}
+.svg-ciano{
+  fill: var(--ciano);
+}
+.svg-magenta{
+  fill: var(--magenta);
+}
+.svg-amarelo{
+  fill: var(--amarelo);
+}
+
+
+.bg-preto{
+  background-color: var(--preto);
+}
+.bg-preto-claro{
+  background-color: var(--preto-claro);
+}
+.bg-cinza-escuro{
+  background-color: var(--cinza-escuro);
+}
+.bg-cinza-claro{
+  background-color: var(--cinza-claro);
+}
+.bg-branco{
+  background-color: var(--branco);
+}
+.bg-ciano{
+  background-color: var(--ciano);
+}
+.bg-magenta{
+  background-color: var(--magenta);
+}
+.bg-amarelo{
+  background-color: var(--amarelo);
+}
+
+/* MOBILE */
+@media screen and (min-width:0){
+  
+}/* MOBILE - FIM */
+
+
+/* TABLET */
+@media screen and (min-width: 768px){
+  
+}/* TABLET - FIM */
+
+
+/* 1024 */
+@media screen and (min-width: 1024px){
+  
+}/* 1024 - FIM */
+
+
+/* 1200 */
+@media screen and (min-width: 1200px){
+  
+}/* 1200 - FIM */
