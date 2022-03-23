@@ -1,7 +1,6 @@
 .banners{
   width: 100%;
-  height: calc(100vh - 2*var(--altura-header));
-  min-height: 25rem;
+  height: calc(80vh - 2*var(--altura-header));
   background-color: var(--cinza-claro);
   background-image: url('../img/bg_banner.jpg');
   background-size: cover;
@@ -52,6 +51,7 @@
         .banner__titulo, .banner__descricao{
           color: var(--branco);
           text-shadow: 0 0 0.25rem black;
+          margin: 0;
         }
 
         .banner__botao{
