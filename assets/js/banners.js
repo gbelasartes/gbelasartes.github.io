@@ -46,6 +46,11 @@ function voltarBanner(){
   mudarBanner(atual,proximo,proximoId);
 }
 
+function irSecaoLink(enderecoLocal){
+  local = document.querySelector(enderecoLocal);
+  local.scrollIntoView({behavior: "smooth"});
+}
+
 // //Passar Automaticamente
 setInterval(mudarAutomatico, 10000);
 
@@ -66,9 +71,7 @@ banners.addEventListener('touchend', function(e) {
 
   if(e.target.className=='banner__botao botao botao-ciano'){
     var enderecoLocal = e.target.firstElementChild.textContent;
-    console.log(enderecoLocal);
-    local = document.querySelector(enderecoLocal);
-    local.scrollIntoView();
+    irSecaoLink(enderecoLocal);
   }
   else{
     e.preventDefault();
@@ -89,14 +92,12 @@ banners.addEventListener('touchend', function(e) {
     }
     else if( Math.abs(td_y) > 10 ) {
         // é vertical
+        var deslocamento = scrollY - td_y;
+          window.scrollTo(0,deslocamento);
         if( td_y < 0 ) {
           // cima
-          var valorScroll = scrollY + touch.pageY;
-          console.log(valorScroll);
-          window.scrollTo(0,valorScroll);
         } else {
           // baixo
-          window.scrollTo(0,0);
         }
     }
   }
