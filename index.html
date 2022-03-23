@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Gráfica Belas Artes">
 
+  <meta name="theme-color" content="#E3E3E3" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#E3E3E3" />
+  
   <title>Gráfica Belas Artes</title>
 
   <link rel="shortcut icon" href="assets/img/icon.png" />
@@ -111,7 +114,8 @@
             </p>
   
             <button class="banner__botao botao botao-ciano">
-              peça um orçamento
+              <div class="invisivel">#materiaisGraficos</div>
+              Saiba mais
             </button>
           </div>
         </div>
@@ -179,7 +183,7 @@
     <section class="servicos padding-pagina" id="servicos">
       <h2 class="servicos__titulo titulo1">Serviços</h2>
       <div class="servicos__conteudo">
-        <div class="servico">
+        <div class="servico" id="materiaisGraficos">
           <div class="servico__fotos">
             <ul class="servico__listaFotos">
               <li class="servico__itemFoto" style="background-image: url(assets/img/banner/banners.png);"></li>
@@ -377,7 +381,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.4131125362846!2d-46.814362785367734!3d-24.192307091078284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d1d544b7d7a6b3%3A0xf7774c6233c04829!2sGr%C3%A1fica%20Belas%20Artes%20Itanhaem!5e0!3m2!1spt-BR!2sbr!4v1647887796010!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
 
-          <ul class="sobre__itens">
+          <address class="sobre__itens">
             <li class="sobre__item bg-ciano">
               <svg class="sobre__icone icone svg-preto-claro" id="whatsapp"></svg>
               <p class="sobre__item-nome">(13) 99774-9141</p>
@@ -398,7 +402,7 @@
               <svg class="sobre__icone icone svg-preto-claro" id="localizacao"></svg>
               <p class="sobre__item-nome">Av. Almeida Júnior, 211, Belas Artes - Itanhaém/SP</p>
             </li>
-          </ul>
+          </address>
         </div>
       </div>
     </section>
@@ -431,7 +435,14 @@
 
         <div class="contato__item">
           <label for="interesse" class="contato__label">Interesse</label>
-          <input type="text" name="interesse" class="contato__input" placeholder="">
+          <input type="list" name="interesse" class="contato__input">
+          <datalist id="interesse">
+            <option value="Materiais Gráficos"></option>
+            <option value="Produtos Digitais"></option>
+            <option value="Carimbos"></option>
+            <option value="Brindes"></option>
+            <option value="Papelaria"></option>
+          </datalist>
         </div>
 
         <div class="contato__item">

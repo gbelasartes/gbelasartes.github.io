@@ -47,17 +47,24 @@ function voltarBanner(){
 }
 
 // //Passar Automaticamente
-// setInterval(mudarAutomatico, 10000);
+setInterval(mudarAutomatico, 10000);
 
 //TOQUE NA TELA
 var ts_x;
 var ts_y;
 
 banners.addEventListener('touchstart', function(e) {
-  e.preventDefault();
-  var touch = e.changedTouches[0];
-  ts_x = touch.pageX;
-  ts_y = touch.pageY;
+  if(e.target.className=='banner__botao botao botao-ciano'){
+    var enderecoLocal = e.target.firstElementChild.textContent;
+    console.log(enderecoLocal);
+    local = document.querySelector(enderecoLocal);
+    local.scrollIntoView();
+  }else{
+    e.preventDefault();
+    var touch = e.changedTouches[0];
+    ts_x = touch.pageX;
+    ts_y = touch.pageY;
+  }
 }, false);
 
 banners.addEventListener('touchend', function(e) {
@@ -66,19 +73,25 @@ banners.addEventListener('touchend', function(e) {
   td_x = touch.pageX - ts_x; // deslocamento na horizontal
   td_y = touch.pageY - ts_y; // deslocamento na vertical
   // O movimento principal foi vertical ou horizontal?
-  if( Math.max( Math.abs( td_x ), Math.abs( td_y ) ) > 100 ) {
+  if( Math.max( Math.abs( td_x )) > 100 ) {
       // é horizontal
-      if( td_x < 0 ) {
+      if( td_x < 10 ) {
         mudarAutomatico();
-      } else {
+      } else if(td_x > 10 ){
         voltarBanner();
       }
-  } else {
+      else{
+        alert('teste');
+      }
+  }
+  else if( Math.abs(td_y) > 10 ) {
       // é vertical
       if( td_y < 0 ) {
         // cima
+        window.scrollTo(0,200);
       } else {
         // baixo
+        window.scrollTo(0,0);
       }
   }
 }, false);
