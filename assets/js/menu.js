@@ -18,3 +18,10 @@ toggleMenu.addEventListener('click',function(event){
     fecharMenu(menu);
   }
 })
+
+var menuLista = document.querySelector('.menu__lista');
+
+menuLista.addEventListener('click',function(){
+  var menu = document.querySelector('.menu');
+  fecharMenu(menu);
+})
