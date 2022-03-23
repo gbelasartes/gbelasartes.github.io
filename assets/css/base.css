@@ -86,7 +86,7 @@ main{
   font-weight: var(--pesoFonte-titulo);
   color: var(--preto-claro);
 
-  box-shadow: 0 0 0.5rem var(--cinza-escuro);
+  box-shadow: 0 0 0.5rem var(--preto-claro);
 } 
   .botao-cinza{ background-color: var(--cinza-claro);color: var(--preto);}
   .botao-preto{ background-color: var(--preto-claro);color: var(--branco);}

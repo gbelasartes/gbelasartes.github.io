@@ -21,9 +21,7 @@
       justify-content: space-around;
     }
 
-      .sobre__descricao{
-        font-weight: 200;
-      }
+      .sobre__descricao{}
 
       .sobre__mapa{
         width: 100%;
